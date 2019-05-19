@@ -61,11 +61,11 @@ gulp.task('rigger', function (done) {
 gulp.task('scripts', () =>
     gulp.src('src/scripts/*.js')
     .pipe(sourcemaps.init())
+    .pipe(concat('all.js'))
     .pipe(babel({
         presets: ['@babel/env']
     }))
-    .pipe(concat('all.js'))
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(rename('main.min.js'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('build/js/'))
