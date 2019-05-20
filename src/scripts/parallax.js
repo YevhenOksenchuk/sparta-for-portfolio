@@ -1,11 +1,10 @@
 (function () {
 
-    function parall(event) {
-        console.log(this.querySelector('.parallax'))
-        this.querySelector('.parallax').forEach(parallax => {
-            parallax.style.transform = `translateX(${event.clientX/50}px)`
-        })
-    };
+    function parall(e) {
+        let layer = this.querySelector('.parallax__layer');
+        layer.style.transform = `translate(${event.clientX/50}px, ${event.clientY/20}px)`
+    }
+    
 
-    document.addEventListener('mousemove', parall);
-});
+    document.addEventListener('mousemove', parall)
+})();
