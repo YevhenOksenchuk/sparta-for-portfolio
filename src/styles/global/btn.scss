@@ -1,0 +1,26 @@
+.btn {
+    width: 307px;
+    height: 73px;
+    background: url('../images/btn-bottom.png') no-repeat bottom,
+                url('../images/btn-default.png') no-repeat center;
+    font-family: "Core Sans E 95";
+    font-size: 1.125rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.056rem;
+    padding-bottom: 20px;
+    transition: .5s;
+    cursor: pointer;
+
+    &:hover {
+        color: #ffffff;
+        background: url('../images/btn-bottom.png') no-repeat bottom,
+                    url('../images/btn-hover.png') no-repeat bottom;
+    }
+
+    &:focus {
+        outline: transparent;
+        color: #ffffff;
+    }
+}

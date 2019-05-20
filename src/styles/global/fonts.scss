@@ -1,87 +1,76 @@
 @font-face {
-    font-family: 'core_sans_e35_light';
-    src: url('coresanse-35light-webfont.eot');
-    src: url('coresanse-35light-webfont.eot?#iefix') format('embedded-opentype'),
-        url('coresanse-35light-webfont.woff2') format('woff2'),
-        url('coresanse-35light-webfont.woff') format('woff'),
-        url('coresanse-35light-webfont.ttf') format('truetype');
+    font-family: 'Core Sans E 45';
+    src: url('../fonts/CoreSansE-45Regular.eot');
+    src: url('../fonts/CoreSansE-45Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansE-45Regular.woff2') format('woff2'),
+        url('../fonts/CoreSansE-45Regular.woff') format('woff'),
+        url('../fonts/CoreSansE-45Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'core_sans_e35_light_italic';
-    src: url('coresanse-35lightit-webfont.eot');
-    src: url('coresanse-35lightit-webfont.eot?#iefix') format('embedded-opentype'),
-        url('coresanse-35lightit-webfont.woff2') format('woff2'),
-        url('coresanse-35lightit-webfont.woff') format('woff'),
-        url('coresanse-35lightit-webfont.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Core Sans E 55';
+    src: url('../fonts/CoreSansE-55Medium.eot');
+    src: url('../fonts/CoreSansE-55Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansE-55Medium.woff2') format('woff2'),
+        url('../fonts/CoreSansE-55Medium.woff') format('woff'),
+        url('../fonts/CoreSansE-55Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'core_sans_e45_regular';
-    src: url('coresanse-45regular-webfont.eot');
-    src: url('coresanse-45regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('coresanse-45regular-webfont.woff2') format('woff2'),
-        url('coresanse-45regular-webfont.woff') format('woff'),
-        url('coresanse-45regular-webfont.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Core Sans E 95';
+    src: url('../fonts/CoreSansE-95Black.eot');
+    src: url('../fonts/CoreSansE-95Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansE-95Black.woff2') format('woff2'),
+        url('../fonts/CoreSansE-95Black.woff') format('woff'),
+        url('../fonts/CoreSansE-95Black.ttf') format('truetype');
+    font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'core_sans_e55_medium';
-    src: url('coresanse-55medium-webfont.eot');
-    src: url('coresanse-55medium-webfont.eot?#iefix') format('embedded-opentype'),
-        url('coresanse-55medium-webfont.woff2') format('woff2'),
-        url('coresanse-55medium-webfont.woff') format('woff'),
-        url('coresanse-55medium-webfont.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Core Sans E 85';
+    src: url('../fonts/CoreSansE-85Heavy.eot');
+    src: url('../fonts/CoreSansE-85Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansE-85Heavy.woff2') format('woff2'),
+        url('../fonts/CoreSansE-85Heavy.woff') format('woff'),
+        url('../fonts/CoreSansE-85Heavy.ttf') format('truetype');
+    font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'core_sans_e65_bold';
-    src: url('coresanse-65bold-webfont.eot');
-    src: url('coresanse-65bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('coresanse-65bold-webfont.woff2') format('woff2'),
-        url('coresanse-65bold-webfont.woff') format('woff'),
-        url('coresanse-65bold-webfont.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Core Sans E 65';
+    src: url('../fonts/CoreSansE-65Bold.eot');
+    src: url('../fonts/CoreSansE-65Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansE-65Bold.woff2') format('woff2'),
+        url('../fonts/CoreSansE-65Bold.woff') format('woff'),
+        url('../fonts/CoreSansE-65Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'core_sans_e85_heavy';
-    src: url('coresanse-85heavy-webfont.eot');
-    src: url('coresanse-85heavy-webfont.eot?#iefix') format('embedded-opentype'),
-        url('coresanse-85heavy-webfont.woff2') format('woff2'),
-        url('coresanse-85heavy-webfont.woff') format('woff'),
-        url('coresanse-85heavy-webfont.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Core Sans E 35';
+    src: url('../fonts/CoreSansE-35Light.eot');
+    src: url('../fonts/CoreSansE-35Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansE-35Light.woff2') format('woff2'),
+        url('../fonts/CoreSansE-35Light.woff') format('woff'),
+        url('../fonts/CoreSansE-35Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'core_sans_e95_black';
-    src: url('coresanse-95black-webfont.eot');
-    src: url('coresanse-95black-webfont.eot?#iefix') format('embedded-opentype'),
-        url('coresanse-95black-webfont.woff2') format('woff2'),
-        url('coresanse-95black-webfont.woff') format('woff'),
-        url('coresanse-95black-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'besom';
-    src: url('besom-webfont.eot');
-    src: url('besom-webfont.eot?#iefix') format('embedded-opentype'),
-        url('besom-webfont.woff2') format('woff2'),
-        url('besom-webfont.woff') format('woff'),
-        url('besom-webfont.ttf') format('truetype');
+    font-family: 'Besom 2';
+    src: url('../fonts/Besom.eot');
+    src: url('../fonts/Besom.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Besom.woff2') format('woff2'),
+        url('../fonts/Besom.woff') format('woff'),
+        url('../fonts/Besom.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

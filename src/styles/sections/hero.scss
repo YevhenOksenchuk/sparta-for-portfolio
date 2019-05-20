@@ -1,0 +1,45 @@
+.hero {
+
+    &__title {
+        margin-bottom: 52px;
+    }
+
+    &__title--top {
+        font-family: "Besom 2";
+        font-size: 11.25rem;
+        color: #ff0000;
+        line-height: 1.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.563rem;
+    }
+
+    &__title--bottom {
+        font-family: "Core Sans E 95";
+        font-size: 4.25rem;
+        font-weight: 900;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    &__shedule {
+        position: relative;
+        font-family: "Core Sans E 35";
+        font-size: 0.875rem;
+        margin-left: 220px;
+        margin-bottom: 60px;
+        font-weight: 400;
+        color: #ffffff;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 205px;
+            height: 40px;
+            left: -23%;
+            @include sprite($week-days);
+            @include center-y;
+        }
+    }
+
+    
+}
