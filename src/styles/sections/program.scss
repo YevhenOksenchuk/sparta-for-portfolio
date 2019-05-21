@@ -1,5 +1,5 @@
 .program {
-
+    margin-bottom: 123px;
 
     &__title:before {
         content: "Что вас ждёт";
@@ -8,7 +8,8 @@
     &__container {
         display: flex;
         flex-direction: column;
-        padding-bottom: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         background: url('../images/program-bg.png') no-repeat center;
     }
 
@@ -22,7 +23,6 @@
 
         &--1 {
             align-self: flex-start;
-            padding-top: 100px;
         }
         
         &--2 {
@@ -37,7 +37,7 @@
 
         &--4 {
             align-self: flex-end;
-            margin: -60px;
+            margin-top: -60px;
         }
 
         &-title {
