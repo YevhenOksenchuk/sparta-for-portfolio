@@ -1,0 +1,59 @@
+.program {
+
+
+    &__title:before {
+        content: "Что вас ждёт";
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+        background: url('../images/program-bg.png') no-repeat center;
+    }
+
+    &__description {
+        margin-left: 10px;
+    }
+
+    &__step {
+        display: flex;
+        align-items: center;
+
+        &--1 {
+            align-self: flex-start;
+            padding-top: 100px;
+        }
+        
+        &--2 {
+            align-self: flex-end;
+            margin-top: -50px;
+        }
+
+        &--3 {
+            align-self: flex-start;
+            margin-top: -70px;
+        }
+
+        &--4 {
+            align-self: flex-end;
+            margin: -60px;
+        }
+
+        &-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 22px;
+            color: #4d4d4d;
+            line-height: 1.5rem;
+            letter-spacing: 0.063rem;
+        }
+
+        &-text {
+            width: 18rem;
+            color: #4d4d4d;
+            line-height: 1.5rem;
+        }
+    }
+
+}

@@ -3,10 +3,11 @@
 }
 
 html {
-    font-style: 16px;
+    font-size: 16px;
 }
 
 body {
+    font-family: "Core Sans E 45";
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -15,9 +16,16 @@ body {
 .container {
     width: 1170px;
     margin: 0 auto;
+    padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
