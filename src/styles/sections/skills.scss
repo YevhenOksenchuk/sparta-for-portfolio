@@ -1,0 +1,70 @@
+.skills {
+    margin-bottom: 154px;
+    width: 100%;
+    background: url('../images/skill.png') no-repeat -142px;
+
+    &__title::before {
+        content: "ты приобретёшь";
+        left: 1%;
+    }
+
+    &__list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        font-size: 1rem;
+        padding-bottom: 2%;
+        height: 782px;
+        color: #4d4d4d;
+        line-height: 1.5rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 30%;
+            height: 100%;
+            top: 1%;
+            left: 47%;
+            background: url('../images/skills.png') no-repeat left;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 25%;
+            height: 100%;
+            top: 25%;
+            left: 45%;
+            background: url('../images/radius-text.png') no-repeat top;
+        }
+    }
+
+    &__item {
+        width: 16%;
+
+        &--1 {
+            margin-right: 23%;
+        }
+
+        &--2 {
+            margin-right: 15%;
+        }
+
+        &--3 {
+            margin-right: 10%;
+           // padding-bottom: 10px;
+        }
+
+        &--4 {
+            margin-right: 5%;
+        }
+
+        &--5 {
+            margin-right: 4%;
+        }
+    }
+}
