@@ -1,0 +1,105 @@
+.footer {
+
+    &__top {
+        height: 860px;
+        padding-top: 150px;
+        background: url('../images/footer.png') no-repeat center center;
+    }
+
+    &__top-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 33%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    &__contact-title {
+        font-family: "Besom 2";
+        font-size: 4.063rem;
+        color: #ffffff;
+        margin-bottom: 44px;
+        text-transform: uppercase;
+        letter-spacing: 0.203rem;
+    }
+
+    &__contact-description {
+        margin-bottom: 46px;
+        color: #ffffff;
+        line-height: 1.5rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form--input-text {
+        height: 3rem;
+        border-radius: 24px;
+        color: #ffffff;
+        padding-left: 20px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.1);
+
+        &::placeholder {
+            color: #ffffff;
+            opacity: 1;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+    }
+
+    &__form-name {
+        margin-bottom: 22px;
+    }
+
+    &__form-phone {
+        margin-bottom: 74px;
+    }
+
+    &__form-submit {
+        margin: 0 auto;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 58px;
+        width: 100%;
+    }
+
+    &__copyright {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #3c313b;
+    }
+
+    &__privacy-policy {
+        font-size: 0.875rem;
+        color: #3c313b;
+        padding-top: 4px;
+        border-bottom: 1px dashed #3c313b;
+
+        &:hover {
+            color: #ff0000;
+            border-bottom: 1px dashed #ff0000;
+        }
+    }
+
+    &__tel-link {
+        font-size: 1.125rem;
+        font-weight: 500;
+        
+        color: #3c313b;
+
+        &:hover {
+            color: #ff0000;
+        }
+    }
+}
