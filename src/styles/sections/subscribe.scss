@@ -1,0 +1,159 @@
+.subscribe {
+    background: url('../images/subscribe-bg.png') no-repeat;
+
+    &__title::before {
+        content: 'Отзывы';
+        left: 27%;
+    }
+
+    &__video {
+        width: 100%;
+        height: 642px;
+        border-radius: 3%;
+        margin-bottom: 58px;
+    }
+
+    &__slider {
+        min-height: 100%;
+        margin-bottom: 168px;
+        padding-bottom: 68px;
+        background: url('../images/subscribe.png') no-repeat;
+        background-size: 100% 111%;
+        overflow: hidden;
+    }
+
+    &__slider-container {
+        display: flex;
+        transition: .5s;
+
+    }
+
+    &__slide {
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+        margin: 0 auto;
+        padding-top: 88px;
+        transition: .5s
+    }
+
+    &__photo {
+        width: 199px;
+        height: 265px;
+        margin-right: 49px;
+    }
+
+    &__user {
+        flex-basis: 60%;
+        color: #4d4d4d;
+        line-height: 1.5rem;
+    }
+
+    &__name {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    &__text {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        transition: .5s;
+    }
+
+    &__hidden-text {
+        transition: .5s;
+    }
+
+    &__btn-show {
+        width: max-content;
+        cursor: pointer;
+        margin-bottom: 67px;
+        border-bottom: 1px dashed #4d4d4d;
+
+        &:hover {
+            color: #ff0000;
+            border-bottom: 1px dashed #ff0000;
+        }
+    }
+
+    &__arrow--down {
+        display: inline-block;
+        transform: rotate(90deg);
+        transition: .5s;
+    }
+
+    // for js script
+    &__arrow--up {
+        display: inline-block;
+        transform: rotate(-90deg);
+    }
+
+    //end
+
+    &__pagination {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        width: 20%;
+    }
+
+    &__pag {
+        cursor: pointer;
+        transition: 40ms;
+
+        &--arrow-left {
+            @include sprite($pag-arrow-left);
+
+            &:hover {
+                @include sprite($pag-arrow-left-hover);
+            }
+        }
+
+        &--arrow-right {
+            @include sprite($pag-arrow-right);
+
+            &:hover {
+                @include sprite($pag-arrow-right-hover);
+            }
+        }
+
+
+
+        &--first-slide {
+            @include sprite($pag-1);
+
+            &:hover {
+                @include sprite($pag-hover-1);
+            }
+        }
+
+        &--second-slide {
+            @include sprite($pag-2);
+
+            &:hover {
+                @include sprite($pag-hover-2);
+            }
+        }
+
+        &--third-slide {
+            @include sprite($pag-3);
+
+            &:hover {
+                @include sprite($pag-hover-3);
+            }
+        }
+
+        &--fourth-slide {
+            @include sprite($pag-4);
+
+            &:hover {
+                @include sprite($pag-hover-4);
+            }
+        }
+
+        &--slide-active {
+            @include sprite($pag-hover-1);
+        }
+
+    }
+}

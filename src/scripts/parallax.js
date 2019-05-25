@@ -6,7 +6,7 @@
         let layer = document.querySelector('.parallax__layer');
         if (e.target == layer || e.target == hero || e.target == title) {
             
-            layer.style.transform = `translate(${event.clientX/50}px, ${event.clientY/20}px)`
+            layer.style.transform = `translate(${e.clientX/50}px, ${e.clientY/20}px)`
         }
     }
     

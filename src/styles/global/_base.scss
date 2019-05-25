@@ -16,7 +16,6 @@ body {
 .container {
     width: 1170px;
     margin: 0 auto;
-    padding: 0;
 }
 
 ul,
@@ -40,4 +39,9 @@ p {
     &:hover {
         text-decoration: none;
     }
+}
+
+.hidden {
+    display: none;
+    transition: .5s;
 }
