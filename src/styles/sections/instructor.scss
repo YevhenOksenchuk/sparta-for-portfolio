@@ -3,7 +3,11 @@
 
     &__title::before {
         content: 'Инструктор';
-        left: 17%;
+        left: 28%;
+
+        @media screen and (max-width: 1170px) {
+            left: 17%;
+        }
     }
 
     &__photo {
