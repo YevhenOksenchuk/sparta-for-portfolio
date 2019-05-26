@@ -1,8 +1,7 @@
 (function () {
 
     function parall(e) {
-        let hero = document.querySelector('.hero__container');
-        let title = document.querySelector('.hero__title');
+        let moveLayer = document.querySelector('.parallax__block--move');
         let layer = document.querySelector('.parallax__layer');
         
             

@@ -1,11 +1,13 @@
 .skills {
     margin-bottom: 154px;
     width: 100%;
-    background: url('../images/skill.png') no-repeat -142px;
+    background: url('../images/skill.png') no-repeat;
+    background-size: 61% 80%;
+    background-position: -19%;
 
     &__title::before {
         content: "ты приобретёшь";
-        left: 1%;
+        left: -2%;
     }
 
     &__list {

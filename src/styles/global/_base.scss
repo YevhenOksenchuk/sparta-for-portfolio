@@ -2,20 +2,25 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 16px;
-}
-
 body {
     font-family: "Core Sans E 45";
+    font-size: 16px;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+
+    @media screen and (max-width: 1170px) {
+        font-size: 14px;
+    }
 }
 
 .container {
     width: 1170px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1170px) {
+        width: 720px;
+    }
 }
 
 ul,

@@ -1,9 +1,18 @@
 .hero {
-
     margin-bottom: 500px;
+
+    &__container {
+        @media screen and (max-width: 1170px) {
+            text-align: center
+        }
+    }
 
     &__title {
         margin-bottom: 52px;
+
+        @media screen and (max-width: 1170px) {
+            margin-bottom: 44px;
+        }
     }
 
     &__title--top {
@@ -40,8 +49,10 @@
             left: -23%;
             @include sprite($week-days);
             @include center-y;
-        }
-    }
 
-    
+            @media screen and (max-width: 1170px) {
+                left: 0;
+            }
+        }
+    } 
 }
