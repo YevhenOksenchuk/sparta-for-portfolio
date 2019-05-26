@@ -1,6 +1,10 @@
 .hero {
     margin-bottom: 500px;
 
+    @media screen and (max-width: 1170px) {
+        margin-bottom: 220px;
+    }
+
     &__container {
         @media screen and (max-width: 1170px) {
             text-align: center

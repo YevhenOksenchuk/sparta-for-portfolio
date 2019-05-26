@@ -1,6 +1,10 @@
 .program {
     margin-bottom: 123px;
 
+    @media screen and (max-width: 1170px) {
+        margin-bottom: 67px;
+    }
+
     &__title:before {
         content: "Что вас ждёт";
         left: 7%;
@@ -12,6 +16,11 @@
         padding-top: 50px;
         padding-bottom: 50px;
         background: url('../images/program-bg.png') no-repeat center;
+
+        @media screen and (max-width: 1170px) {
+            background: url('../images/program-bg-tablet.png') no-repeat center;
+            background-position: center 0%;
+        }
     }
 
     &__description {
@@ -25,35 +34,84 @@
         &--1 {
             align-self: flex-start;
         }
-        
+
         &--2 {
             align-self: flex-end;
             margin-top: -50px;
+
+            @media screen and (max-width: 1170px) {
+                margin-top: 0;
+            }
         }
 
         &--3 {
             align-self: flex-start;
             margin-top: -70px;
+
+            @media screen and (max-width: 1170px) {
+                margin-top: 0;
+            }
         }
 
         &--4 {
+            flex-direction: column;
             align-self: flex-end;
             margin-top: -60px;
+
+            margin-top: 0;
         }
 
         &-title {
-            font-size: 1.25rem;
+            font-size: 1.7rem;
             font-weight: bold;
             margin-bottom: 22px;
             color: #4d4d4d;
             line-height: 1.5rem;
             letter-spacing: 0.063rem;
+
+            @media screen and (max-width: 1170px) {
+                line-height: 1.714rem;
+            }
         }
 
         &-text {
             width: 18rem;
             color: #4d4d4d;
             line-height: 1.5rem;
+
+            @media screen and (max-width: 1170px) {
+                width: 25rem;
+            }
+        }
+
+        &-img--size-1 {
+            @media screen and (max-width: 1170px) {
+                width: 290px;
+                height: 237px;
+            }
+        }
+
+        &-img--size-2 {
+            @media screen and (max-width: 1170px) {
+                width: 291px;
+                height: 243px;
+                order: 2;
+            }
+        }
+
+        &-img--size-3 {
+            @media screen and (max-width: 1170px) {
+                width: 320px;
+                height: 333px;
+            }
+        }
+
+        &-img--size-4 {
+            @media screen and (max-width: 1170px) {
+                width: 343px;
+                height: 280px;
+                order: 0;
+            }
         }
     }
 
