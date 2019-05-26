@@ -21,6 +21,11 @@
         background: url('../images/subscribe.png') no-repeat;
         background-size: 100% 111%;
         overflow: hidden;
+
+        @media screen and (max-width: 1170px) {
+            margin-bottom: 100px;
+            padding-bottom: 0;
+        }
     }
 
     &__slider-container {
@@ -48,6 +53,10 @@
         flex-basis: 60%;
         color: #4d4d4d;
         line-height: 1.5rem;
+
+        @media screen and (max-width: 1170px) {
+            flex-basis: 50%;
+        }
     }
 
     &__name {
@@ -96,6 +105,10 @@
         margin: 0 auto;
         justify-content: space-between;
         width: 20%;
+
+        @media screen and (max-width: 1170px) {
+            width: 35%;
+        }
     }
 
     &__pag {

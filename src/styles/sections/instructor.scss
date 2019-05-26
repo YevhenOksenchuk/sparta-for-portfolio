@@ -8,6 +8,11 @@
 
     &__photo {
         margin-right: 36px;
+
+        @media screen and (max-width: 1170px) {
+            width: 50%;
+            margin: 0 auto 25px auto;
+        }
     }
 
     &__container {
@@ -15,6 +20,10 @@
         justify-content: space-between;
         margin-bottom: 86px;
         width: 100%;
+
+        @media screen and (max-width: 1170px) {
+            flex-direction: column;
+        }
     }
 
     &__name {
@@ -24,6 +33,12 @@
         color: #ff0000;
         line-height: 1.5rem;
         letter-spacing: 0.075rem;
+
+        @media screen and (max-width: 1170px) {
+            text-align: center;
+            font-weight: bold;
+            font-size: 2rem;
+        }
     }
 
     &__description-list {
@@ -35,9 +50,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        font-size: 1rem;
+        font-size: 1.3rem;
         color: #4d4d4d;
         line-height: 1.5rem;
+
+        @media screen and (max-width: 1170px) {
+            height: 170px;
+        }
     }
 
     &__description-left {
@@ -59,6 +78,13 @@
         display: flex;
         justify-content: space-between;
         text-align: center;
+
+        @media screen and (max-width: 1170px) {
+            justify-content: space-around;
+            align-content: space-around;
+            flex-wrap: wrap;
+            height: 200px;
+        }
     }
 
     &__skill--number {
@@ -77,6 +103,11 @@
         color: #4d4d4d;
         line-height: 1.5rem;
         letter-spacing: 0.05rem;
+
+        @media screen and (max-width: 1170px) {
+            display: flex;
+            flex-basis: 35%;
+        }
     }
 
 

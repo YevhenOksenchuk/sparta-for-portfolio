@@ -1,6 +1,10 @@
 .special-course {
     margin-bottom: 115px;
 
+    @media screen and (max-width: 1170px) {
+        margin-bottom: 70px;
+    }
+
     &__title::before {
         content: "Программа";
         left: 15%;
@@ -30,13 +34,17 @@
         line-height: 1.078rem;
         text-transform: uppercase;
         letter-spacing: 0.316rem;
+
+        @media screen and (max-width: 1170px) {
+            flex-basis: 95%;
+        }
     }
 
     &__list-item {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-bottom: 10px;
         color: #4d4d4d;
-        line-height: 1.5rem;
+        line-height: 2rem;
     }
 
     &__list-item--counter {

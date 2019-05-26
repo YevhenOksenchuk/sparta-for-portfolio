@@ -1,10 +1,17 @@
 .warning {
-
     margin-bottom: 132px;
 
-    &__title::before{
+    @media screen and (max-width: 1170px) {
+        margin-bottom: 61px;
+    }
+
+    &__title::before {
         content: "ты узнаешь";
         left: 28%;
+
+        @media screen and (max-width: 1170px) {
+            left: 20%;
+        }
     }
 
     &__container {
@@ -15,10 +22,18 @@
 
     &__side {
         flex-basis: 47%;
+
+        @media screen and (max-width: 1170px) {
+            margin-bottom: 170px;
+        }
     }
 
     &__right-side {
         align-self: center;
+
+        @media screen and (max-width: 1170px) {
+            align-self: flex-start;
+        }
     }
 
     &__list {
@@ -65,8 +80,15 @@
             @include sprite($fourth);
         }
 
-        &--fifth::before {
-            @include sprite($fifth);
+        &--fifth {
+            @media screen and (max-width: 1170px) {
+                position: absolute;
+                @include center-x;
+            }
+
+            &::before {
+                @include sprite($fifth);
+            }
         }
     }
 
@@ -82,8 +104,14 @@
     }
 
     &__line {
-        @include sprite($five-line);
-        margin-bottom: 32px;    
+        margin-bottom: 32px;
+
+        &-img {
+            @media screen and (max-width: 1170px) {
+                width: 90%;
+                height: 30px;
+            }
+        }
     }
 
     &__line-description {
