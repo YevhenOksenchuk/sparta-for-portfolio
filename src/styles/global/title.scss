@@ -14,9 +14,13 @@
         margin-bottom: 57px;
     }
 
+    @media screen and (max-width: 768px) {
+        font-size: 2.571rem;
+    }
+
     &::before {
         @include center-y;
-        
+
         position: absolute;
         font-family: "Besom 2";
         font-size: 11.25rem;
@@ -26,5 +30,9 @@
         color: #32383f;
         text-transform: uppercase;
         letter-spacing: 0.563rem;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 }

@@ -17,6 +17,11 @@
         align-content: space-evenly;
         height: 634px;
         background: url('../images/programm.png') no-repeat 100% 100%;
+
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+            align-content: center;
+        }
     }
 
     &__side {
@@ -24,6 +29,11 @@
         font-size: 1rem;
         color: #4d4d4d;
         line-height: 1.5rem;
+
+        @media screen and (max-width: 768px) {
+            flex-basis: 75%;
+            margin: 0 auto 30px auto;
+        }
     }
 
     &__sign-up {
@@ -37,6 +47,11 @@
 
         @media screen and (max-width: 1170px) {
             flex-basis: 95%;
+        }
+
+        @media screen and (max-width: 768px) {
+            line-height: 4rem;
+            text-align: center;
         }
     }
 

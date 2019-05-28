@@ -9,6 +9,12 @@
         margin-bottom: 75px;
     }
 
+    @media screen and (max-width: 768px) {
+        padding-top: 100px;
+    }
+
+
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -21,6 +27,14 @@
             grid-template-rows: 1fr 1fr;
             grid-column-gap: 63px;
             width: 95%;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr 2fr 2fr;
+            grid-column-gap: 0;
+            grid-row-gap: 25px;
         }
     }
 
@@ -38,6 +52,10 @@
             @media screen and (max-width:1170px) {
                 margin-right: 20px;
             }
+
+            @media screen and (max-width: 768px) {
+                margin-right: 0;
+            }
         }
 
         &-base {
@@ -45,6 +63,11 @@
                 grid-column: 2/3;
                 grid-row: 1/2;
                 margin-right: 20px;
+            }
+
+            @media screen and (max-width: 768px) {
+                grid-row: auto;
+                grid-column: auto;
             }
         }
 
@@ -98,6 +121,10 @@
             grid-row: 1/3;
         }
 
+        @media screen and (max-width: 768px) {
+            background: url(../images/futures-img.png) no-repeat center/cover;
+        }
+
         &-text {
             @include center-xy;
             width: 70%;
@@ -116,14 +143,27 @@
             grid-template-rows: 1fr 1fr;
             grid-gap: 50px;
         }
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+        }
     }
 
     &__bottom-item {
         flex-basis: 30%;
+        margin-bottom: 50px;
     }
 
     &__bottom-item--1 {
         grid-column: 2/3;
+
+        @media screen and (max-width: 768px) {
+            
+        }
     }
 
     &__bottom-item--2 {

@@ -48,6 +48,10 @@
     &__description-list {
         display: flex;
         height: 70%;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     &__description--side {
@@ -66,12 +70,23 @@
     &__description-left {
         width: 58%;
         padding-left: 6%;
-        background: url('../images/red-left.png') no-repeat 100% 100%
+        background: url('../images/red-left.png') no-repeat 100% 100%;
+
+        @media screen and (max-width: 768px) {
+            width: 91%;
+            background: none;
+            margin-bottom: 20px;
+        }
     }
 
     &__description-right {
         width: 30%;
         padding-left: 3%;
+
+        @media screen and (max-width: 768px) {
+            padding-left: 6%;
+            width: 91%;
+        }
     }
 
     &__description-item--left {
@@ -88,6 +103,12 @@
             align-content: space-around;
             flex-wrap: wrap;
             height: 200px;
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
         }
     }
 
@@ -111,6 +132,10 @@
         @media screen and (max-width: 1170px) {
             display: flex;
             flex-basis: 35%;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 18px;
         }
     }
 

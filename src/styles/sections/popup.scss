@@ -30,6 +30,11 @@
         padding-top: 70px;
         margin: 10% auto 0 auto;
         background: url('../images/popup.png') no-repeat center;
+
+        @media screen and (max-width: 768px) {
+            width: 85%;
+            height: 100%;
+        }
     }
 
     &__wrapper {
@@ -86,5 +91,9 @@
 
     &__form-submit {
         margin: 0 auto;
+        
+        @media screen and (max-width: 768px) {
+            margin-left: -46px;
+        }
     }
 }

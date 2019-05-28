@@ -5,6 +5,10 @@
         margin-bottom: 67px;
     }
 
+    @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+
     &__title:before {
         content: "Что вас ждёт";
         left: 20%;
@@ -25,6 +29,12 @@
             background: url('../images/program-bg-tablet.png') no-repeat center;
             background-position: center 0%;
         }
+
+        @media screen and (max-width: 768px) {
+            background: none;
+            padding: 0;
+
+        }
     }
 
     &__description {
@@ -35,8 +45,18 @@
         display: flex;
         align-items: center;
 
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
         &--1 {
             align-self: flex-start;
+            
+            @media screen and (max-width: 768px) {
+                align-self: center;
+            }
         }
 
         &--2 {
@@ -45,6 +65,10 @@
 
             @media screen and (max-width: 1170px) {
                 margin-top: 0;
+            }
+
+            @media screen and (max-width: 768px) {
+                align-self: center;
             }
         }
 
@@ -55,6 +79,10 @@
             @media screen and (max-width: 1170px) {
                 margin-top: 0;
             }
+
+            @media screen and (max-width: 768px) {
+                align-self: center;
+            }
         }
 
         &--4 {
@@ -64,6 +92,10 @@
             @media screen and (max-width: 1170px) {
                 flex-direction: column;
                 margin-top: 0;
+            }
+
+            @media screen and (max-width: 768px) {
+                align-self: center;
             }
         }
 
@@ -103,18 +135,21 @@
                 height: 243px;
                 order: 2;
             }
+            @media screen and (max-width: 768px) {
+                order: 0;
+            }
         }
 
         &-img--size-3 {
             @media screen and (max-width: 1170px) {
-                width: 320px;
+                width: 318px;
                 height: 333px;
             }
         }
 
         &-img--size-4 {
             @media screen and (max-width: 1170px) {
-                width: 343px;
+                width: 318px;
                 height: 280px;
                 order: 0;
             }

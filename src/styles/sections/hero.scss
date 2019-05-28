@@ -5,6 +5,10 @@
         margin-bottom: 220px;
     }
 
+    @media screen and (max-width: 768px) {
+        margin-bottom: 150px;
+    }
+
     &__container {
         @media screen and (max-width: 1170px) {
             text-align: center
@@ -26,6 +30,10 @@
         line-height: 1.25rem;
         text-transform: uppercase;
         letter-spacing: 0.563rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: 9.25rem;
+        }
     }
 
     &__title--bottom {
@@ -34,6 +42,10 @@
         font-weight: 900;
         color: #ffffff;
         text-transform: uppercase;
+
+        @media screen and (max-width: 768px) {
+            font-size: 3.25rem;
+        }
     }
 
     &__shedule {
@@ -56,6 +68,10 @@
 
             @media screen and (max-width: 1170px) {
                 left: 0;
+            }
+
+            @media screen and (max-width: 768px) {
+                left: -210px;
             }
         }
     } 

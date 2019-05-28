@@ -18,6 +18,10 @@
             align-content: center;
             flex-wrap: wrap;
         }
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
     }
 
     &__title {
@@ -27,6 +31,10 @@
         color: #ff0000;
         text-transform: uppercase;
         letter-spacing: 0.438rem;
+
+        @media screen and (max-width: 768px) {
+            flex-basis: 100%;
+        }
     }
 
     &__text {
@@ -40,6 +48,17 @@
         @media screen and (max-width: 1170px) {
             flex-basis: 100%;
             order: 2;
+        }
+
+        @media screen and (max-width: 768px) {
+            order: 0;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__btn {
+        @media screen and (max-width: 768px) {
+            margin: 0 auto;
         }
     }
 }

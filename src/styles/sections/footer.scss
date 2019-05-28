@@ -18,6 +18,10 @@
         @media screen and (max-width: 1170px) {
             width: 40%;
         }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     &__contact-title {
@@ -76,6 +80,13 @@
         justify-content: space-around;
         margin-bottom: 58px;
         width: 100%;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+            height: 100px;
+            margin-bottom: 30px;
+        }
     }
 
     &__copyright {
@@ -89,6 +100,11 @@
         color: #3c313b;
         padding-top: 4px;
         border-bottom: 1px dashed #3c313b;
+
+        @media screen and (max-width: 768px) {
+            width: max-content;
+            margin: 0 auto;
+        }
 
         &:hover {
             color: #ff0000;

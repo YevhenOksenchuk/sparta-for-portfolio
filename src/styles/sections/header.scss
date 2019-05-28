@@ -11,6 +11,10 @@
         width: 100%;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__logo--img {
@@ -19,6 +23,18 @@
             width: 160px;
             height: 58px;
         }
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__logo--img-320 {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
     }
 
     &__description {
@@ -26,6 +42,12 @@
         font-size: 1.125rem;
         color: #ffffff;
         letter-spacing: 0.788rem;
+
+        @media screen and (max-width: 768px) {
+            order: 2;
+            flex-basis: 100%;
+            text-align: center;
+        }
     }
 
     &__link {
