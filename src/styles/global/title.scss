@@ -7,7 +7,6 @@
     margin-bottom: 70px;
     color: #ff0000;
     text-transform: uppercase;
-    letter-spacing: 0.213rem;
     text-align: center;
 
     @media screen and (max-width: 1170px) {
@@ -18,8 +17,12 @@
         font-size: 2.571rem;
     }
 
+    @media screen and (max-width: 550px) {
+        font-size: 2rem;
+    }
+
     &::before {
-        @include center-y;
+        @include center-xy;
 
         position: absolute;
         font-family: "Besom 2";
@@ -31,7 +34,7 @@
         text-transform: uppercase;
         letter-spacing: 0.563rem;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1170px) {
             display: none;
         }
     }

@@ -1,14 +1,13 @@
 .subscribe {
-    padding-bottom: 106px;
+    margin-bottom: 106px;
     background: url('../images/subscribe-bg.png') no-repeat;
 
     @media screen and (max-width: 768px) {
-        padding-bottom: 50px;
+        margin-bottom: 50px;
     }
 
     &__title::before {
         content: 'Отзывы';
-        left: 27%;
     }
 
     &__video {
@@ -43,7 +42,7 @@
         justify-content: center;
         min-width: 100%;
         margin: 0 auto;
-        padding-top: 88px;
+        padding-top: 140px;
         transition: .5s;
 
         @media screen and (max-width: 768px) {
@@ -144,10 +143,10 @@
 
     &__pag {
         cursor: pointer;
-        transition: 40ms;
 
         &--arrow-left {
             @include sprite($pag-arrow-left);
+            cursor: pointer;
 
             &:hover {
                 @include sprite($pag-arrow-left-hover);
@@ -156,6 +155,7 @@
 
         &--arrow-right {
             @include sprite($pag-arrow-right);
+            cursor: pointer;
 
             &:hover {
                 @include sprite($pag-arrow-right-hover);
@@ -200,5 +200,21 @@
             @include sprite($pag-hover-1);
         }
 
+    }
+
+    &__pag-0 {
+        @include sprite($pag-hover-1);
+    }
+
+    &__pag-1 {
+        @include sprite($pag-hover-2);
+    }
+    
+    &__pag-2 {
+        @include sprite($pag-hover-3);
+    }
+
+    &__pag-3 {
+        @include sprite($pag-hover-4);
     }
 }

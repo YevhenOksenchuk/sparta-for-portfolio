@@ -29,10 +29,13 @@
         color: #ff0000;
         line-height: 1.25rem;
         text-transform: uppercase;
-        letter-spacing: 0.563rem;
 
         @media screen and (max-width: 768px) {
             font-size: 9.25rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 7.25rem;
         }
     }
 

@@ -110,6 +110,10 @@
         font-weight: 400;
         color: #ffffff;
         line-height: 1.5rem;
+
+        @media screen and (max-width: 500px) {
+            font-size: 1rem;
+        }
     }
 
     &__img {
@@ -133,6 +137,10 @@
             color: #ffffff;
             text-transform: uppercase;
             letter-spacing: 0.113rem;
+
+            @media screen and (max-width: 500px) {
+                font-size: 1rem;
+            }
         }
     }
 

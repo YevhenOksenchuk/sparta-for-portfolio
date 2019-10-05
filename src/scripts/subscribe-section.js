@@ -4,18 +4,55 @@
     let arrow = document.querySelectorAll('.subscribe__arrow--down');
     let dots = document.querySelectorAll('.subscribe__hidden-dots');
     let btnShow = document.querySelectorAll('.subscribe__btn-show');
-    let slider = document.querySelector('.subscribe__slider-container');
-
+    
+    let slidesContainer = document.querySelector('.subscribe__slider-container')
+    let slides = document.querySelectorAll('.subscribe__slide');
     let prevBtn = document.querySelector('.subscribe__prev');
     let nextBtn = document.querySelector('.subscribe__next');
-    let firstSlide = document.querySelector('.subscribe__pag--first-slide');
-    let secondSlide = document.querySelector('.subscribe__pag--second-slide');
-    let thirdSlide = document.querySelector('.subscribe__pag--third-slide');
-    let fourthSlide = document.querySelector('.subscribe__pag--fourth-slide');
-    let active = document.querySelectorAll('.subscribe__pag--slide');
+    let pags = document.querySelectorAll('.subscribe__pag');
 
-    let transform = 0;
-    let transformCounter;
+    let currentPosition = 0;
+    
+    // SLIDER
+
+    function goSlider(position) {
+        currentPosition += position;
+
+        if (currentPosition < (slides.length - 1) * -100) {
+            currentPosition = 0;
+        } else 
+        if (currentPosition > 0) {
+            currentPosition = (slides.length - 1) * -100;
+        }
+
+        pags.forEach( e => e.classList.remove('subscribe__pag-0', 'subscribe__pag-1', 'subscribe__pag-2', 'subscribe__pag-3'));
+
+        slidesContainer.style.transform = `translateX(${currentPosition}%)`;
+        pags[currentPosition / -100].classList.add(`subscribe__pag-${currentPosition / -100}`);
+    }
+
+    goSlider(0)
+
+    function nextSlide() {
+        goSlider(-100)
+    }
+
+    function prevSlide() {
+        goSlider(100)
+    }
+
+    function pagsSlider(n) {
+        currentPosition = 0;
+        goSlider(n * -100)
+    }
+
+    for (let i = 0; i < pags.length; i++) {
+        pags[i].onclick = () => pagsSlider(i)
+        
+    }
+
+    nextBtn.onclick = nextSlide
+    prevBtn.onclick = prevSlide
 
     // HIDDEN TEXT
 
@@ -32,87 +69,4 @@
             };
         };
     };
-
-    // SLIDER
-
-    function next() {
-        transformCounter = transform - 100;
-
-        if (transformCounter == -400) {
-            transformCounter = 0
-        }
-
-        transform = transformCounter;
-
-
-        slider.style.transform = `translateX(${transformCounter}%)`;
-
-        for (let i = 0; i < hiddenText.length; i++) {
-            hiddenText[i].classList.add('hidden');
-            dots[i].classList.remove('hidden');
-        }
-        pag();
-    }
-
-    function prev() {
-        transformCounter = transform + 100;
-
-        if (transformCounter == 100) {
-            transformCounter = -300
-        }
-
-        transform = transformCounter;
-
-
-        slider.style.transform = `translateX(${transformCounter}%)`;
-
-        for (let i = 0; i < hiddenText.length; i++) {
-            hiddenText[i].classList.add('hidden');
-            dots[i].classList.remove('hidden');
-        }
-
-        pag()
-    }
-
-    //dots color
-
-    function pag() {
-        for (let i = 0; i < active.length; i++) {
-            active[i].classList.remove('subscribe__pag--slide-active')
-        }
-
-        switch (transformCounter) {
-            case 0:
-                firstSlide.classList.add('subscribe__pag--slide-active');
-                break;
-            case -100:
-                secondSlide.classList.add('subscribe__pag--slide-active');
-                break;
-            case -200:
-                thirdSlide.classList.add('subscribe__pag--slide-active');
-                break;
-            default:
-                fourthSlide.classList.add('subscribe__pag--slide-active');
-                break;
-        }
-    }
-
-    function swipe(e, event) {
-        e.mousedown = e.clientX;
-        event.mouseup = event.clientX;
-        let ev = e.mousedown - event.mouseup
-        if (ev > 50) {
-            console.log(ev)
-            prev()
-        }
-        console.log(e.clientX)
-    }
-
-    slider.addEventListener('mousedown', swipe);
-    slider.addEventListener('mouseup', swipe);
-
-    nextBtn.onclick = next;
-    prevBtn.onclick = prev;
-
-
 })();

@@ -35,6 +35,10 @@
         @media screen and (max-width: 768px) {
             flex-basis: 100%;
         }
+
+        @media screen and (max-width: 500px) {
+            font-size: 5rem;
+        }
     }
 
     &__text {

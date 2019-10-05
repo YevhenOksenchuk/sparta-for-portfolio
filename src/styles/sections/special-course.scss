@@ -7,7 +7,6 @@
 
     &__title::before {
         content: "Программа";
-        left: 15%;
     }
 
     &__container {
@@ -16,11 +15,19 @@
         justify-content: space-evenly;
         align-content: space-evenly;
         height: 634px;
-        background: url('../images/programm.png') no-repeat 100% 100%;
+        background: url('../images/programm.png') no-repeat center/cover;
+
+        @media screen and (max-width: 1170px) {
+            height: 741px;
+        }
 
         @media screen and (max-width: 768px) {
             justify-content: center;
             align-content: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            height: 1135px;
         }
     }
 
@@ -47,11 +54,12 @@
 
         @media screen and (max-width: 1170px) {
             flex-basis: 95%;
+            line-height: 4rem;
+            text-align: center;
         }
 
         @media screen and (max-width: 768px) {
-            line-height: 4rem;
-            text-align: center;
+            font-size: 3.5rem;
         }
     }
 
